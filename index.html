@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Inventory Management System</h1>
+
+    <p class="subtitle">
+        Manage inventory, update stock levels, and search products.
+    </p>
+
+    <!-- Add Product -->
+
+    <input
+    type="text"
+    id="productName"
+    placeholder="Product Name">
+
+    <input
+    type="number"
+    id="productQuantity"
+    placeholder="Quantity">
+
+    <button onclick="addProduct()">
+        Add Product
+    </button>
+
+    <button onclick="displayProducts()">
+        Display Products
+    </button>
+
+    <button onclick="showOutOfStock()">
+        Out Of Stock
+    </button>
+
+    <button onclick="clearInventory()">
+        Clear Inventory
+    </button>
+
+    <br><br>
+
+    <!-- Search Product -->
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search Product">
+
+    <button onclick="searchProduct()">
+        Search
+    </button>
+
+    <br><br>
+
+    <!-- Update Quantity -->
+
+    <input
+    type="text"
+    id="updateProductName"
+    placeholder="Product To Update">
+
+    <input
+    type="number"
+    id="newQuantity"
+    placeholder="New Quantity">
+
+    <button onclick="updateQuantity()">
+        Update Quantity
+    </button>
+
+    <p id="productCount">
+        Total Products: 0
+    </p>
+
+    <div id="output"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
